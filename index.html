@@ -3,10 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
-  <body>
+  <body class="page">
+    <header class="header">
+      <img class="header__logo" src="./images/header-logo.svg" alt="Логотип магазина «Device»." width="155" height="37">
+      <nav class="header__navigation">
+        <form class="header__form">
+          <label class="visually-hidden" for="input-search">Поиск по магазину</label>
+          <input class="header__input" type="text" placeholder="Поиск по сайту" name="input-search" id="input-search" required>
+          <button class="header__button" type="submit">Найти</button>
+        </form>
+        <ul class="header__user-navigation">
+          <li class="header__user-navigation-item header__user-navigation-item-log-in"><a class="header__user-navigation-link" href="#">Войти</a></li>
+          <li class="header__user-navigation-item header__user-navigation-item-compare"><a class="header__user-navigation-link" href="#">Сравнить</a></li>
+          <li class="header__user-navigation-item header__user-navigation-item-basket"><a class="header__user-navigation-link" href="#">Корзина</a></li>
+        </ul>
+        <ul class="header__magazin-navigation">
+          <li class="header__magazin-navigation-item"><a class="header__magazin-navigation-link">Каталог товаров</a></li>
+          <li class="header__magazin-navigation-item"><a class="header__magazin-navigation-link">Доставка</a></li>
+          <li class="header__magazin-navigation-item"><a class="header__magazin-navigation-link">Гарантия</a></li>
+          <li class="header__magazin-navigation-item"><a class="header__magazin-navigation-link">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
 
   </body>
 </html>

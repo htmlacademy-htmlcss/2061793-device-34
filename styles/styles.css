@@ -1,0 +1,144 @@
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/raleway/raleway-800.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/rubik/rubik-400.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/rubik/rubik-700.woff2);
+  font-display: swap;
+}
+
+/* Возможно это не нужно. Попробовать потом удалить!!!! */
+html {
+  height: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page {
+  font-family: 'Rubik', sans-serif;
+  min-height: 100%;
+  margin: 0;
+}
+
+/* Стили для блока header */
+.header {
+  width: 1040px;
+  margin: 19px auto 0 auto;
+}
+
+.header__logo {
+  margin-bottom: 26px;
+}
+
+.header__form {
+  margin-left: 4px;
+  display: flex;
+}
+
+.header__input {
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-right: 1px solid #000000;
+  border-radius: 50px 0 0 50px;
+  background-color: inherit;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 125px 8px 46px;
+  background-image: url(../images/header-input-icon.svg);
+  background-position: left 16px center;
+  background-repeat: no-repeat;
+}
+
+/* Нужно поправить!!!! */
+.header__input:focus {
+  outline: #AF4FFF solid 2px;
+}
+
+.header__input:disabled {
+  opacity: 0.3;
+}
+
+.header__button {
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-left: 1px solid #000000;
+  border-radius: 0 50px 50px 0;
+  background-color: inherit;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 54px;
+}
+
+.header__button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.header__button:active {
+  color: rgb(255, 255, 255, .3);
+}
+
+/* Нужно поправить!!!! */
+.header__button:focus {
+  outline: #AF4FFF solid 2px;
+}
+
+.header__button:disabled {
+  opacity: 0.3;
+}
+
+.header__user-navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header__user-navigation-link {
+  color:#000000;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.header__user-navigation-item-log-in {
+  position: relative;
+}
+
+.header__user-navigation-item-log-in::before {
+  content: "";
+  background-image: url(../images/header-user-nav-log-in.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
