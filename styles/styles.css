@@ -46,12 +46,23 @@ html {
 
 /* Стили для блока header */
 .header {
-  width: 1040px;
+  width: 1160px;
   margin: 19px auto 0 auto;
+  background-color: #FFE17F;
+}
+
+.header-wrapper {
+  width: 1044px;
+  margin: 0 auto 0 auto;
 }
 
 .header__logo {
   margin-bottom: 26px;
+}
+
+.header__navigation-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .header__form {
@@ -114,10 +125,13 @@ html {
 }
 
 .header__user-navigation {
+  width: 522px;
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .header__user-navigation-link {
@@ -125,20 +139,136 @@ html {
   text-decoration: none;
   font-size: 18px;
   line-height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.header__user-navigation-link:hover {
+  opacity: 0.7;
+}
+
+.header__user-navigation-link:active {
+  opacity: 0.4;
+}
+
+.header__user-navigation-link:focus {
+  outline: #AF4FFF solid 2px;
 }
 
 .header__user-navigation-item-log-in {
-  position: relative;
+  margin-left: 25px;
 }
 
-.header__user-navigation-item-log-in::before {
-  content: "";
+.header__user-navigation-link-log-in-ikon {
   background-image: url(../images/header-user-nav-log-in.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 15px;
   height: 12px;
+  margin-right: 12px;
+}
+
+.header__user-navigation-item-compare {
+  margin-left: auto;
+  margin-right: 11px;
+}
+
+.header__user-navigation-link-compare-ikon {
+  background-image: url(../images/header-user-nav-compare.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 15px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.header__user-navigation-link-basket-ikon {
+  background-image: url(../images/header-user-nav-basket.svg);
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 65%;
+  width: 38px;
+  height: 30px;
+  margin-right: 12px;
+  position: relative;
+}
+
+.header__user-navigation-link-log-in-counter {
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  width: 21px;
+  height: 21px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 5px;
+  left: 7px;
+}
+
+.header__magazin-navigation {
+  list-style-type: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__magazin-navigation-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.header__magazin-navigation-link-catalog {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header__magazin-navigation-button {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  opacity: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 17px;
+}
+
+.header__magazin-navigation-item-catalog {
+  margin-left: 4px;
+}
+
+.header__magazin-navigation-item-delivery {
+  margin-left: auto;
+  margin-right: 43px;
+}
+
+.header__magazin-navigation-item-warranty {
+  margin-right: 45px;
+}
+
+.header__magazin-submenu {
+  list-style: none;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: none;
+  letter-spacing: 0;
+  background-color: #FFE17F;
+  position: absolute;
+  width: 1160px;
 }

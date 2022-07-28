@@ -7,25 +7,47 @@
   </head>
   <body class="page">
     <header class="header">
-      <img class="header__logo" src="./images/header-logo.svg" alt="Логотип магазина «Device»." width="155" height="37">
-      <nav class="header__navigation">
-        <form class="header__form">
-          <label class="visually-hidden" for="input-search">Поиск по магазину</label>
-          <input class="header__input" type="text" placeholder="Поиск по сайту" name="input-search" id="input-search" required>
-          <button class="header__button" type="submit">Найти</button>
-        </form>
-        <ul class="header__user-navigation">
-          <li class="header__user-navigation-item header__user-navigation-item-log-in"><a class="header__user-navigation-link" href="#">Войти</a></li>
-          <li class="header__user-navigation-item header__user-navigation-item-compare"><a class="header__user-navigation-link" href="#">Сравнить</a></li>
-          <li class="header__user-navigation-item header__user-navigation-item-basket"><a class="header__user-navigation-link" href="#">Корзина</a></li>
-        </ul>
-        <ul class="header__magazin-navigation">
-          <li class="header__magazin-navigation-item"><a class="header__magazin-navigation-link">Каталог товаров</a></li>
-          <li class="header__magazin-navigation-item"><a class="header__magazin-navigation-link">Доставка</a></li>
-          <li class="header__magazin-navigation-item"><a class="header__magazin-navigation-link">Гарантия</a></li>
-          <li class="header__magazin-navigation-item"><a class="header__magazin-navigation-link">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="header-wrapper">
+        <img class="header__logo" src="./images/header-logo.svg" alt="Логотип магазина «Device»." width="155" height="37">
+        <nav class="header__navigation">
+          <div class="header__navigation-wrapper">
+            <form class="header__form">
+              <label class="visually-hidden" for="input-search">Поиск по магазину</label>
+              <input class="header__input" type="text" placeholder="Поиск по сайту" name="input-search" id="input-search" required>
+              <button class="header__button" type="submit">Найти</button>
+            </form>
+            <ul class="header__user-navigation">
+              <li class="header__user-navigation-item-log-in"><a class="header__user-navigation-link header__user-navigation-link-log-in" href="#"><div class="header__user-navigation-link-log-in-ikon"></div>Войти</a></li>
+              <li class="header__user-navigation-item-compare"><a class="header__user-navigation-link header__user-navigation-link-compare" href="#"><div class="header__user-navigation-link-compare-ikon"></div>Сравнить</a></li>
+              <li class="header__user-navigation-item-basket"><a class="header__user-navigation-link header__user-navigation-link-basket" href="#"><div class="header__user-navigation-link-basket-ikon"><span class="header__user-navigation-link-log-in-counter">2</span></div>Корзина</a></li>
+            </ul>
+          </div>
+          <ul class="header__magazin-navigation">
+            <li class="header__magazin-navigation-item header__magazin-navigation-item-catalog">
+              <a class="header__magazin-navigation-link header__magazin-navigation-link-catalog" href="#">Каталог товаров
+                <div class="header__magazin-navigation-button">
+                  <svg class="header__magazin-navigation-button-image" aria-hidden="true" focusable="false" width="16" height="17" viewbox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_64)"><path d="M16 7.78699H9V0.786987H7V7.78699H0V9.78699H7V16.787H9V9.78699H16V7.78699Z"/></g>
+                    <defs><clippath id="clip0_1_64"><rect width="16" height="16" transform="translate(0 0.786987)"/></clippath></defs>
+                  </svg>
+                </div>
+              </a>
+              <!-- Выпадающее меню -->
+              <ul class="header__magazin-submenu">
+                <li class="header__magazin-submenu-item"><a class="header__magazin-submenu-link">Виртуальная реальность</a></li>
+                <li class="header__magazin-submenu-item"><a class="header__magazin-submenu-link">Моноподы для cелфи</a></li>
+                <li class="header__magazin-submenu-item"><a class="header__magazin-submenu-link">Экшн-камеры</a></li>
+                <li class="header__magazin-submenu-item"><a class="header__magazin-submenu-link">Фитнес-браслеты</a></li>
+                <li class="header__magazin-submenu-item"><a class="header__magazin-submenu-link">Умные часы</a></li>
+                <li class="header__magazin-submenu-item"><a class="header__magazin-submenu-link">Квадрокоптеры</a></li>
+              </ul>
+            </li>
+            <li class="header__magazin-navigation-item header__magazin-navigation-item-delivery"><a class="header__magazin-navigation-link" href="#">Доставка</a></li>
+            <li class="header__magazin-navigation-item header__magazin-navigation-item-warranty"><a class="header__magazin-navigation-link" href="#">Гарантия</a></li>
+            <li class="header__magazin-navigation-item"><a class="header__magazin-navigation-link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
 
