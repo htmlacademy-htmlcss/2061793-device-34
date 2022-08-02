@@ -332,3 +332,102 @@ html {
 .header__magazin-submenu-link-active {
   border-bottom: 2px solid #000000;
 }
+
+.header__user-navigation-item-basket {
+  position: relative;
+}
+
+.header__tooltip {
+  width: 320px;
+  height: 301px;
+  position: absolute;
+  top: 35px;
+  left: -117px;
+  background-color: #000000;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__tooltip::after {
+  content: '';
+  background-image: url(../images/header-basket-tooltip-arrow.svg);
+  width: 14px;
+  height: 6px;
+  position: absolute;
+  top: -6px;
+  left: 153px;
+}
+
+.header__tooltip-basket-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.header__tooltip-basket-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid rgb(255, 255, 255, .3);
+  box-sizing: border-box;
+}
+
+.header__tooltip-basket-item:last-of-type {
+  border: none;
+}
+
+.header__tooltip-basket-item-title {
+  max-width: 160px;
+  margin: 0;
+  margin-left: 23px;
+  margin-right: auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header__tooltip-basket-close-button {
+  width: 10px;
+  height: 10px;
+  align-self: flex-start;
+  background-image: url(../images/header-basket-tooltip-button-close.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  border: none;
+}
+
+.header__tooltip-basket-products-counter, .header__tooltip-basket-products-price {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header__tooltip-basket-container {
+  background-color: #1A1A1A;
+  height: 44px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__tooltip-basket-button {
+  width: 280px;
+  height: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  color: #000000;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
