@@ -1,3 +1,4 @@
+/* Подключение шрифтов */
 @font-face {
   font-family: Raleway;
   font-style: normal;
@@ -47,20 +48,24 @@ html {
 /* Стили для блока header */
 .header {
   width: 1160px;
-  margin: 19px auto 0 auto;
+  margin: 40px auto 0 auto;
   background-color: #FFE17F;
 }
 
 .header-wrapper {
-  width: 1044px;
+  width: 1046px;
   margin: 0 auto 0 auto;
+  position: relative;
 }
 
 .header__logo {
-  margin-bottom: 26px;
+  position: absolute;
+  top: -21px;
+  left: -2px;
 }
 
 .header__navigation-wrapper {
+  padding-top: 45px;
   display: flex;
   align-items: center;
 }
@@ -85,7 +90,6 @@ html {
   background-repeat: no-repeat;
 }
 
-/* Нужно поправить!!!! */
 .header__input:focus {
   outline: #AF4FFF solid 2px;
 }
@@ -115,7 +119,6 @@ html {
   color: rgb(255, 255, 255, .3);
 }
 
-/* Нужно поправить!!!! */
 .header__button:focus {
   outline: #AF4FFF solid 2px;
 }
@@ -124,6 +127,7 @@ html {
   opacity: 0.3;
 }
 
+/* Стили для пользовательского меню */
 .header__user-navigation {
   width: 522px;
   list-style-type: none;
@@ -207,6 +211,7 @@ html {
   left: 7px;
 }
 
+/* Стили для навигации по магазину */
 .header__magazin-navigation {
   list-style-type: none;
   font-family: 'Raleway', sans-serif;
@@ -274,9 +279,10 @@ html {
 }
 
 .header__magazin-navigation-item-warranty {
-  margin-right: 45px;
+  margin-right: 46px;
 }
 
+/* Стили для выпадающего меню */
 .header__magazin-submenu {
   display: none;
   list-style: none;
@@ -333,8 +339,13 @@ html {
   border-bottom: 2px solid #000000;
 }
 
+/* Стили для tooltip */
 .header__user-navigation-item-basket {
   position: relative;
+}
+
+.header__user-navigation-item-basket:hover > .header__tooltip {
+  display: flex;
 }
 
 .header__tooltip {
@@ -342,10 +353,10 @@ html {
   height: 301px;
   position: absolute;
   top: 35px;
-  left: -117px;
+  left: -120px;
   background-color: #000000;
   color: #FFFFFF;
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
@@ -365,16 +376,35 @@ html {
 }
 
 .header__tooltip-basket-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 20px;
   border-bottom: 1px solid rgb(255, 255, 255, .3);
   box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__tooltip-basket-item:last-of-type {
   border: none;
+}
+
+.header__tooltip-basket-item-link {
+  text-decoration: none;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__tooltip-basket-item-link:hover {
+  opacity: 0.6;
+}
+
+.header__tooltip-basket-item-link:active {
+  opacity: 0.3;
+}
+
+.header__tooltip-basket-item-link:focus {
+  outline: #AF4FFF solid 2px;
 }
 
 .header__tooltip-basket-item-title {
@@ -396,6 +426,18 @@ html {
   background-repeat: no-repeat;
   background-color: inherit;
   border: none;
+}
+
+.header__tooltip-basket-close-button:hover {
+  opacity: 0.6;
+}
+
+.header__tooltip-basket-close-button:active {
+  opacity: 0.3;
+}
+
+.header__tooltip-basket-close-button:focus {
+  outline: #AF4FFF solid 2px;
 }
 
 .header__tooltip-basket-products-counter, .header__tooltip-basket-products-price {
@@ -430,4 +472,21 @@ html {
   justify-content: center;
   align-items: center;
   margin: 20px auto;
+}
+
+.header__tooltip-basket-button:hover {
+  background-color: #FFE17F;
+}
+
+.header__tooltip-basket-button:active {
+  background-color: #FFE17F;
+  color: rgb(1, 1, 1, 0.3);
+}
+
+.header__tooltip-basket-button:focus {
+  outline: #AF4FFF solid 2px;
+}
+
+.header__tooltip-basket-button:disabled {
+  color: rgb(1, 1, 1, 0.3);
 }

@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
   </head>
   <body class="page">
+    <!-- Блок header -->
     <header class="header">
       <div class="header-wrapper">
         <img class="header__logo" src="./images/header-logo.svg" alt="Логотип магазина «Device»." width="155" height="37">
@@ -16,6 +17,7 @@
               <input class="header__input" type="text" placeholder="Поиск по сайту" name="input-search" id="input-search" required>
               <button class="header__button" type="submit">Найти</button>
             </form>
+            <!-- Пользовательское меню -->
             <ul class="header__user-navigation">
               <li class="header__user-navigation-item-log-in"><a class="header__user-navigation-link header__user-navigation-link-log-in" href="#"><div class="header__user-navigation-link-log-in-ikon"></div>Войти</a></li>
               <li class="header__user-navigation-item-compare"><a class="header__user-navigation-link header__user-navigation-link-compare" href="#"><div class="header__user-navigation-link-compare-ikon"></div>Сравнить</a></li>
@@ -24,13 +26,17 @@
                 <span class="header__tooltip">
                   <ul class="header__tooltip-basket-list">
                     <li class="header__tooltip-basket-item">
-                      <img class="header__tooltip-basket-item-image" src="./images/header-basket-tooltip-amateur-selfie-stick.jpg" alt="Любительская селфи-палка." width="39" height="43">
-                      <h3 class="header__tooltip-basket-item-title">Любительская селфи-палка</h3>
+                      <a class="header__tooltip-basket-item-link" href="#">
+                        <img class="header__tooltip-basket-item-image" src="./images/header-basket-tooltip-amateur-selfie-stick.jpg" alt="Любительская селфи-палка." width="39" height="43">
+                        <h3 class="header__tooltip-basket-item-title">Любительская селфи-палка</h3>
+                      </a>
                       <button class="header__tooltip-basket-close-button" type="button"></button>
                     </li>
                     <li class="header__tooltip-basket-item">
-                      <img class="header__tooltip-basket-item-image" src="./images/header-basket-tooltip-professional-selfie-stick.jpg" alt="Профессиональная селфи-палка." width="39" height="43">
-                      <h3 class="header__tooltip-basket-item-title">Профессиональная селфи-палка</h3>
+                      <a class="header__tooltip-basket-item-link" href="#">
+                        <img class="header__tooltip-basket-item-image" src="./images/header-basket-tooltip-professional-selfie-stick.jpg" alt="Профессиональная селфи-палка." width="39" height="43">
+                        <h3 class="header__tooltip-basket-item-title">Профессиональная селфи-палка</h3>
+                      </a>
                       <button class="header__tooltip-basket-close-button" type="button"></button>
                     </li>
                   </ul>
@@ -40,6 +46,7 @@
               </li>
             </ul>
           </div>
+          <!-- Навигация по магазину -->
           <ul class="header__magazin-navigation">
             <li class="header__magazin-navigation-item header__magazin-navigation-item-catalog">
               <a class="header__magazin-navigation-link header__magazin-navigation-link-catalog" href="#">Каталог товаров<div class="header__magazin-navigation-button"></div></a>
@@ -60,7 +67,5 @@
         </nav>
       </div>
     </header>
-
-
   </body>
 </html>
