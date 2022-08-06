@@ -295,7 +295,7 @@ html {
   background-color: #FFE17F;
   position: absolute;
   top: 50px;
-  left: -62px;
+  left: -61px;
   padding: 13px 0 56px 62px;
   width: 1160px;
   box-sizing: border-box;
@@ -316,6 +316,18 @@ html {
 .header__magazin-navigation-link-catalog:hover > .header__magazin-navigation-button {
   background-image: url(../images/header-mag-nav-button-close.svg);
   opacity: 1;
+}
+
+.header__magazin-navigation-item-catalog:hover .header__magazin-navigation-button {
+  background-image: url(../images/header-mag-nav-button-close.svg);
+}
+
+.header__magazin-navigation-item-catalog:focus-within .header__magazin-navigation-button {
+  background-image: url(../images/header-mag-nav-button-close.svg);
+}
+
+.header__magazin-navigation-item-catalog:focus-within .header__magazin-submenu {
+  display: grid;
 }
 
 .header__magazin-submenu-link {
@@ -489,4 +501,130 @@ html {
 
 .header__tooltip-basket-button:disabled {
   color: rgb(1, 1, 1, 0.3);
+}
+
+/* Стили для блока со слайдером */
+.slider {
+  width: 1160px;
+  margin: 0 auto 0 auto;
+  position: relative;
+}
+
+.slider_counter-wrapper {
+  background-color: #FFE17F;
+  height: 135px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.slider_counter {
+  color: #FFFFFF;
+  font-family: 'Rubik';
+  font-weight: 700;
+  font-size: 180px;
+  line-height: 105px;
+  margin: 0;
+  margin-right: 49px;
+}
+
+.slider-wrapper {
+  width: 100%;
+  position: absolute;
+  top: -15px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider_image-wrapper {
+  width: 560px;
+  height: 560px;
+  position: relative;
+}
+
+.slider_image-button {
+  width: 20px;
+  height: 60px;
+  background-color: inherit;
+  background-image: url(../images/slider-arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.slider_image-button:hover {
+  opacity: 0.6;
+}
+
+.slider_image-button:active {
+  opacity: 0.3;
+}
+
+.slider_image-button:focus {
+  outline: #AF4FFF solid 2px;
+}
+
+.slider_image-button:disabled {
+  opacity: 0.1;
+}
+
+.slider_image-button-left {
+  position: absolute;
+  top: 211px;
+  left: 30px;
+}
+
+.slider_image-button-right {
+  transform: rotate(180deg);
+  position: absolute;
+  top: 211px;
+  right: 0;
+}
+
+.slider_description-wrapper {
+  width: 560px;
+  margin-top: 121px;
+}
+
+.slider_slogan {
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.slider_description {
+  margin: 0;
+  margin-top: 29px;
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.slider_button-dot {
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+
+.slider_button-active {
+  background-color: #000000;
+}
+
+.slider_table-data {
+  font-size: 36px;
+  line-height: 30px;
+}
+
+.slider_table-header {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
 }
