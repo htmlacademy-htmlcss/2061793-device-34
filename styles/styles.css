@@ -23,11 +23,6 @@
   font-display: swap;
 }
 
-/* Возможно это не нужно. Попробовать потом удалить!!!! */
-html {
-  height: 100%;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -43,6 +38,8 @@ html {
   font-family: 'Rubik', sans-serif;
   min-height: 100%;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Стили для блока header */
@@ -50,6 +47,7 @@ html {
   width: 1160px;
   margin: 40px auto 0 auto;
   background-color: #FFE17F;
+  z-index: 1;
 }
 
 .header-wrapper {
@@ -510,6 +508,10 @@ html {
   position: relative;
 }
 
+.slider-hidden {
+  display: none;
+}
+
 .slider_counter-wrapper {
   background-color: #FFE17F;
   height: 135px;
@@ -602,6 +604,7 @@ html {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  color: #444444;
 }
 
 .slider_button-dot {
@@ -618,12 +621,90 @@ html {
   background-color: #000000;
 }
 
+.slider_link-wrapper {
+  margin-top: 51px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider_link {
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background: linear-gradient(rgba(255, 255, 255, 0) 40%, #FFE17F 40%, #FFE17F 60%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 100%);
+  background-size: 100% 100%;
+  padding: 10px 36px 10px 38px;
+}
+
+.slider_link:hover {
+  background-size: 100% 500%;
+  background-color: #FFE17F;
+}
+
+.slider_link:active {
+  background-size: 100% 500%;
+  background-color: #FFCC33;
+}
+
+.slider_link:focus {
+  outline: #AF4FFF solid 2px;
+}
+
+.slider_link:disabled {
+  opacity: 0.3;
+}
+
+.slider_button-dot {
+  margin-right: 17px;
+}
+
+.slider_button-dot:last-of-type {
+  margin-right: 0;
+}
+
+.slider_button-dot:hover {
+  opacity: 0.6;
+}
+
+.slider_button-dot:active {
+  opacity: 0.3;
+}
+
+.slider_button-dot:focus {
+  outline: #AF4FFF solid 2px;
+}
+
+.slider_table {
+  margin-top: 46px;
+  display: flex;
+}
+
+.slider-features-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-right: 20px;
+}
+
+.slider-features-wrapper:last-of-type {
+  margin-right: 0;
+}
+
 .slider_table-data {
+  margin: 0;
   font-size: 36px;
   line-height: 30px;
 }
 
 .slider_table-header {
+  padding-top: 14px;
+  color: #444444;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;

@@ -22,6 +22,7 @@
               <li class="header__user-navigation-item-log-in"><a class="header__user-navigation-link header__user-navigation-link-log-in" href="#"><div class="header__user-navigation-link-log-in-ikon"></div>Войти</a></li>
               <li class="header__user-navigation-item-compare"><a class="header__user-navigation-link header__user-navigation-link-compare" href="#"><div class="header__user-navigation-link-compare-ikon"></div>Сравнить</a></li>
               <li class="header__user-navigation-item-basket"><a class="header__user-navigation-link header__user-navigation-link-basket" href="#"><div class="header__user-navigation-link-basket-ikon"><span class="header__user-navigation-link-log-in-counter">2</span></div>Корзина</a>
+
                 <!-- Tooltip -->
                 <span class="header__tooltip">
                   <ul class="header__tooltip-basket-list">
@@ -46,10 +47,12 @@
               </li>
             </ul>
           </div>
+
           <!-- Навигация по магазину -->
           <ul class="header__magazin-navigation">
             <li class="header__magazin-navigation-item header__magazin-navigation-item-catalog">
               <a class="header__magazin-navigation-link header__magazin-navigation-link-catalog" href="#">Каталог товаров<div class="header__magazin-navigation-button"></div></a>
+
               <!-- Выпадающее меню -->
               <ul class="header__magazin-submenu">
                 <li class="header__magazin-submenu-item header__magazin-submenu-link-virtual-reality"><a class="header__magazin-submenu-link" href="#">Виртуальная реальность</a></li>
@@ -67,27 +70,111 @@
         </nav>
       </div>
     </header>
-    <section class="slider">
-      <div class="slider_counter-wrapper"><p class="slider_counter">01</p></div>
-      <div class="slider-wrapper">
-        <div class="slider_image-wrapper">
-          <button class="slider_image-button slider_image-button-left" type="button"></button>
-          <img class="slider_image" src="./images/slider-image-quadracopter.png" alt="Квадракоптер." width="560" height="560">
-          <button class="slider_image-button slider_image-button-right" type="button"></button>
+
+    <main class="main">
+
+      <!-- Первый слайд -->
+      <section class="slider">
+        <div class="slider_counter-wrapper"><p class="slider_counter">01</p></div>
+        <div class="slider-wrapper">
+          <div class="slider_image-wrapper">
+            <button class="slider_image-button slider_image-button-left" type="button"></button>
+            <img class="slider_image" src="./images/slider-image-quadracopter.png" alt="Квадракоптер." width="560" height="560">
+            <button class="slider_image-button slider_image-button-right" type="button"></button>
+          </div>
+          <div class="slider_description-wrapper">
+            <span class="slider_slogan">Порхает как бабочка, жалит как пчела!</span>
+            <p class="slider_description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <div class="slider_link-wrapper">
+              <a class="slider_link" href="#">Подробнее</a>
+              <div class="slider_button-wrapper">
+                <button class="slider_button-dot slider_button-active"></button>
+                <button class="slider_button-dot"></button>
+                <button class="slider_button-dot"></button>
+              </div>
+            </div>
+            <dl class="slider_table">
+              <div class="slider-features-wrapper">
+                <dt class="slider_table-header">Дальность полета</dt>
+                <dd class="slider_table-data">800 м</dd>
+              </div>
+              <div class="slider-features-wrapper">
+                <dt class="slider_table-header">Радиус поражения</dt>
+                <dd class="slider_table-data">50 м</dd>
+              </div>
+            </dl>
+          </div>
         </div>
-        <div class="slider_description-wrapper">
-          <span class="slider_slogan">Порхает как бабочка, жалит как пчела!</span>
-          <p class="slider_description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-          <a>Подробнее</a>
-          <button class="slider_button-dot slider_button-active"></button>
-          <button class="slider_button-dot"></button>
-          <button class="slider_button-dot"></button>
-          <table>
-            <tr><td class="slider_table-data">800 м</td><td class="slider_table-data">50 м</td></tr>
-            <tr><th class="slider_table-header">Дальность полета</th><th class="slider_table-header">Радиус поражения</th></tr>
-          </table>
+      </section>
+
+      <!-- Второй слайд -->
+      <section class="slider slider-hidden">
+        <div class="slider_counter-wrapper"><p class="slider_counter">02</p></div>
+        <div class="slider-wrapper">
+          <div class="slider_image-wrapper">
+            <button class="slider_image-button slider_image-button-left" type="button"></button>
+            <img class="slider_image" src="./images/slider-image-fitness-bracelet.png" alt="Фитнес-браслет." width="560" height="560">
+            <button class="slider_image-button slider_image-button-right" type="button"></button>
+          </div>
+          <div class="slider_description-wrapper">
+            <span class="slider_slogan">Худеем <br>правильно!</span>
+            <p class="slider_description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <div class="slider_link-wrapper">
+              <a class="slider_link" href="#">Подробнее</a>
+              <div class="slider_button-wrapper">
+                <button class="slider_button-dot slider_button-active"></button>
+                <button class="slider_button-dot"></button>
+                <button class="slider_button-dot"></button>
+              </div>
+            </div>
+            <dl class="slider_table">
+              <div class="slider-features-wrapper">
+                <dt class="slider_table-header">Без подзарядки</dt>
+                <dd class="slider_table-data">48 часов</dd>
+              </div>
+            </dl>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- Третий слайд -->
+      <section class="slider slider-hidden">
+        <div class="slider_counter-wrapper"><p class="slider_counter">03</p></div>
+        <div class="slider-wrapper">
+          <div class="slider_image-wrapper">
+            <button class="slider_image-button slider_image-button-left" type="button"></button>
+            <img class="slider_image" src="./images/slider-image-monopod.png" alt="Селфи-палка." width="560" height="560">
+            <button class="slider_image-button slider_image-button-right" type="button"></button>
+          </div>
+          <div class="slider_description-wrapper">
+            <span class="slider_slogan">Делай селфи, <br>как Бен Стиллер! </span>
+            <p class="slider_description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
+            <div class="slider_link-wrapper">
+              <a class="slider_link" href="#">Подробнее</a>
+              <div class="slider_button-wrapper">
+                <button class="slider_button-dot slider_button-active"></button>
+                <button class="slider_button-dot"></button>
+                <button class="slider_button-dot"></button>
+              </div>
+            </div>
+            <dl class="slider_table">
+              <div class="slider-features-wrapper">
+                <dt class="slider_table-header">Длина палки</dt>
+                <dd class="slider_table-data">8,5 м</dd>
+              </div>
+              <div class="slider-features-wrapper">
+                <dt class="slider_table-header">Вес палки</dt>
+                <dd class="slider_table-data">5 кг</dd>
+              </div>
+              <div class="slider-features-wrapper">
+                <dt class="slider_table-header">Материал</dt>
+                <dd class="slider_table-data">Карбон</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+    </main>
   </body>
 </html>
