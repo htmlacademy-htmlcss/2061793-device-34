@@ -47,7 +47,7 @@
   width: 1160px;
   margin: 40px auto 0 auto;
   background-color: #FFE17F;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header-wrapper {
@@ -219,7 +219,7 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 45px;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -249,8 +249,7 @@
 }
 
 .header__magazin-navigation-link-catalog {
-  display: flex;
-  align-items: center;
+  position: relative;
 }
 
 .header__magazin-navigation-button {
@@ -263,7 +262,10 @@
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.3;
-  margin-left: 17px;
+  position: absolute;
+  top: -15px;
+  right: -69px;
+  z-index: 1;
 }
 
 .header__magazin-navigation-item-catalog {
@@ -292,9 +294,9 @@
   letter-spacing: 0;
   background-color: #FFE17F;
   position: absolute;
-  top: 50px;
+  top: 21px;
   left: -61px;
-  padding: 13px 0 56px 62px;
+  padding: 27px 0 56px 62px;
   width: 1160px;
   box-sizing: border-box;
   grid-template-columns: 200px 160px 160px;
@@ -505,6 +507,7 @@
 .slider {
   width: 1160px;
   margin: 0 auto 0 auto;
+  display: flex;
   position: relative;
 }
 
@@ -514,10 +517,16 @@
 
 .slider_counter-wrapper {
   background-color: #FFE17F;
-  height: 135px;
+  height: 148px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  z-index: 0;
 }
 
 .slider_counter {
@@ -532,11 +541,9 @@
 
 .slider-wrapper {
   width: 100%;
-  position: absolute;
-  top: -15px;
-  left: 0;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .slider_image-wrapper {
@@ -622,7 +629,7 @@
 }
 
 .slider_link-wrapper {
-  margin-top: 51px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -708,4 +715,91 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
+}
+
+/* Стили для каталога */
+.catalog {
+  width: 1160px;
+  margin: 68px auto;
+}
+
+.catalog_list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 40px;
+}
+
+.catalog_link {
+  display: block;
+  width: 160px;
+  height: 253px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.catalog_link:hover .catalog_image {
+  background-color: #FFC700;
+}
+
+.catalog_link:active {
+  opacity: 0.3;
+}
+
+.catalog_link:focus {
+  outline: #AF4FFF solid 2px;
+}
+
+.catalog_image {
+  width: 160px;
+  height: 160px;
+  background-color: #FFE17F;
+}
+
+.catalog_image-virtual-reality {
+  background-image: url(../images/catalog-image-virtual-reality.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.catalog_image-monopods {
+  background-image: url(../images/catalog-image-monopods.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.catalog_image-action-cameras {
+  background-image: url(../images/catalog-image-action-cameras.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.catalog_image-fitness-bracelets {
+  background-image: url(../images/catalog-image-fitness-bracelets.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.catalog_image-smart-watches {
+  background-image: url(../images/catalog-image-smart-watches.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.catalog_image-quadracopters {
+  background-image: url(../images/catalog-image-quadracopters.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.catalog_title {
+  margin-top: 32px;
+  margin-bottom: 0;
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
 }
