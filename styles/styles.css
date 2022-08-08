@@ -803,3 +803,71 @@
   line-height: 24px;
   letter-spacing: -0.02em;
 }
+
+/* Стили для блока с преимуществами */
+.features {
+  width: 100%;
+  height: 289px;
+  margin-top: 172px;
+  background-color: #F0F0F0;
+  position: relative;
+}
+
+.features-wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  position: absolute;
+  top: -100px;
+  left: 97px;
+}
+
+.features_buttons-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-right: 7px solid #000000;
+}
+
+.features_buttons-item {
+  margin-right: 120px;
+  margin-bottom: 35px;
+}
+
+.features_buttons-item:first-of-type {
+  padding-top: 64px;
+}
+
+.features_button {
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: none;
+  background: linear-gradient(rgba(255, 255, 255, 0) 40%, #FFE17F 40%, #FFE17F 60%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 100%);
+  background-size: 100% 100%;
+  padding: 10px 33px 10px 33px;
+}
+
+.features_destription-list {
+  max-width: 475px;
+  list-style-type: none;
+}
+
+.features_destription-item-hidden {
+  display: none;
+}
+
+.features_destription-header {
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.features_destription-text {
+  font-size: 18px;
+  line-height: 30px;
+}
