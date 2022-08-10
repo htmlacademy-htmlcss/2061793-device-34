@@ -1119,3 +1119,268 @@
   line-height: 30px;
   color: #444444;
 }
+
+/* Стили для блока подписки */
+.subscription {
+  width: 100vw;
+  background-color: #F0F0F0;
+}
+
+.subscription-wrapper {
+  width: 1158px;
+  padding-top: 64px;
+  padding-bottom: 56px;
+  margin: 0 auto;
+}
+
+.subscription_description-wrapper {
+  margin-bottom: 144px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscription_title {
+  margin: 0;
+  max-width: 350px;
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.subscription_description {
+  margin: 0;
+  max-width: 560px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+
+.subscription_form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscription_form {
+  display: flex;
+}
+
+.subscription_form-field {
+  width: 557px;
+  border: none;
+  border-bottom: 3px solid #C4C4C4;
+  background-color: inherit;
+}
+
+.subscription_form-field::placeholder {
+  padding-left: 16px;
+  padding-bottom: 14px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.subscription_button {
+  width: 253px;
+  height: 57px;
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 3px solid #C4C4C4;
+  cursor: pointer;
+}
+
+.subscription_button:hover {
+  background-color: #000000;
+  border: 3px solid #000000;
+  color: #FFFFFF;
+}
+
+.subscription_button:active {
+  background-color: #000000;
+  border: 3px solid #000000;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.subscription_button:focus {
+  outline: 3px solid #C4C4C4;
+}
+.subscription_button:disabled {
+  opacity: 0.3;
+}
+
+.subscription_warning {
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+  position: relative;
+}
+
+.subscription_warning::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/subscription-tick.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 5px;
+  left: -25px;
+}
+
+/* Стили для футера */
+.footer {
+  width: 100vw;
+  background-color: #444444;
+  color: #FFFFFF;
+}
+
+.footer_wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 62px;
+  padding-bottom: 77px;
+}
+
+.footer_image {
+  margin-bottom: 35px;
+}
+
+.footer_nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_address {
+  max-width: 230px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.footer_nav-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.footer_nav-item {
+  margin-right: 35px;
+}
+
+.footer_nav-link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer_nav-link:hover {
+  color: #FFC700;
+  text-decoration: underline;
+}
+
+.footer_nav-link:active {
+  color: #FFC700;
+  text-decoration: underline;
+  opacity: 0.3;
+}
+
+.footer_nav-link:focus {
+  outline: 3px solid #7B61FF;
+}
+
+.footer_telefone-link {
+  color: #FFFFFF;
+}
+
+.footer_telefone-link:hover {
+  color: #FFC700;
+}
+
+.footer_telefone-link:active {
+  opacity: 0.3;
+}
+
+.footer_telefone-link:focus {
+  outline: 3px solid #7B61FF;
+}
+
+.footer_social-wrapper {
+  margin-top: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_social-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.footer_decoravite-line {
+  width: 80px;
+  height: 7px;
+  background-color: #FFC500;
+}
+
+.footer_social-item {
+  margin-right: 15px;
+}
+
+.footer_social-logo {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.footer_social-logo-svg {
+  fill: #444444;
+}
+
+.footer_social-link:hover .footer_social-logo {
+  fill: #FFC700;
+}
+
+.footer_social-link:active .footer_social-logo-svg {
+  opacity: 0.3;
+}
+
+.footer_social-link:active .footer_social-logo {
+  fill: #FFC700;
+}
+
+.footer_social-link:focus {
+  outline: 3px solid #7B61FF;
+}
+
+.footer_html-academy-logo path {
+  fill: #FFC700;
+}
+
+.footer_html-academy-logo:hover path {
+  fill: #FFFFFF;
+}
+
+.footer_html-academy-logo:active path {
+  fill: #FFFFFF;
+  opacity: 0.3;
+}
+
+.footer_html-academy-logo:focus path {
+  outline: 3px solid #7B61FF;
+}
