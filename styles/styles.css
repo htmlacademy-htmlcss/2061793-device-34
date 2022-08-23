@@ -979,6 +979,7 @@
 }
 
 .features_destription-text {
+  max-width: 455px;
   font-size: 18px;
   line-height: 30px;
 }
