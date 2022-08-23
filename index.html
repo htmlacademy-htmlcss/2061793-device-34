@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="./styles/styles.css">
     <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
   <body class="page">
     <!-- Блок header -->
@@ -14,7 +14,7 @@
         <a class="header_logo-link" href="#"><img class="header__logo" src="./images/header-logo.svg" alt="Логотип магазина «Device»." width="155" height="37"></a>
         <nav class="header__navigation">
           <div class="header__navigation-wrapper">
-            <form class="header__form">
+            <form class="header__form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="input-search">Поиск по магазину</label>
               <input class="header__input" type="text" placeholder="Поиск по сайту" name="input-search" id="input-search" required>
               <button class="header__button" type="submit">Найти</button>
@@ -33,14 +33,18 @@
                         <img class="header__tooltip-basket-item-image" src="./images/header-basket-tooltip-amateur-selfie-stick.jpg" alt="Любительская селфи-палка." width="39" height="43">
                         <h3 class="header__tooltip-basket-item-title">Любительская селфи-палка</h3>
                       </a>
-                      <button class="header__tooltip-basket-close-button" type="button"></button>
+                      <button class="header__tooltip-basket-close-button" type="button">
+                        <span class="visually-hidden">Удалить товар из корзины.</span>
+                      </button>
                     </li>
                     <li class="header__tooltip-basket-item">
                       <a class="header__tooltip-basket-item-link" href="#">
                         <img class="header__tooltip-basket-item-image" src="./images/header-basket-tooltip-professional-selfie-stick.jpg" alt="Профессиональная селфи-палка." width="39" height="43">
                         <h3 class="header__tooltip-basket-item-title">Профессиональная селфи-палка</h3>
                       </a>
-                      <button class="header__tooltip-basket-close-button" type="button"></button>
+                      <button class="header__tooltip-basket-close-button" type="button">
+                        <span class="visually-hidden">Удалить товар из корзины.</span>
+                      </button>
                     </li>
                   </ul>
                   <div class="header__tooltip-basket-container"><span class="header__tooltip-basket-products-counter">Товаров: 2</span><span class="header__tooltip-basket-products-price">Сумма: 2000 ₽</span></div>
@@ -81,9 +85,13 @@
         <div class="slider_counter-wrapper"><p class="slider_counter">01</p></div>
         <div class="slider-wrapper">
           <div class="slider_image-wrapper">
-            <button class="slider_image-button slider_image-button-left" type="button"></button>
+            <button class="slider_image-button slider_image-button-left" type="button">
+              <span class="visually-hidden">Предыдущий слайд.</span>
+            </button>
             <img class="slider_image" src="./images/slider-image-quadracopter.png" alt="Квадракоптер." width="560" height="560">
-            <button class="slider_image-button slider_image-button-right" type="button"></button>
+            <button class="slider_image-button slider_image-button-right" type="button">
+              <span class="visually-hidden">Следующий слайд.</span>
+            </button>
           </div>
           <div class="slider_description-wrapper">
             <span class="slider_slogan">Порхает как бабочка, жалит как пчела!</span>
@@ -91,9 +99,15 @@
             <div class="slider_link-wrapper">
               <a class="slider_link" href="#">Подробнее</a>
               <div class="slider_button-wrapper">
-                <button class="slider_button-dot slider_button-active"></button>
-                <button class="slider_button-dot"></button>
-                <button class="slider_button-dot"></button>
+                <button class="slider_button-dot slider_button-active">
+                  <span class="visually-hidden">1 слайд.</span>
+                </button>
+                <button class="slider_button-dot">
+                  <span class="visually-hidden">2 слайд.</span>
+                </button>
+                <button class="slider_button-dot">
+                  <span class="visually-hidden">3 слайд.</span>
+                </button>
               </div>
             </div>
             <dl class="slider_table">
@@ -116,9 +130,13 @@
         <div class="slider_counter-wrapper"><p class="slider_counter">02</p></div>
         <div class="slider-wrapper">
           <div class="slider_image-wrapper">
-            <button class="slider_image-button slider_image-button-left" type="button"></button>
+            <button class="slider_image-button slider_image-button-left" type="button">
+              <span class="visually-hidden">Предыдущий слайд.</span>
+            </button>
             <img class="slider_image" src="./images/slider-image-fitness-bracelet.png" alt="Фитнес-браслет." width="560" height="560">
-            <button class="slider_image-button slider_image-button-right" type="button"></button>
+            <button class="slider_image-button slider_image-button-right" type="button">
+              <span class="visually-hidden">Следующий слайд.</span>
+            </button>
           </div>
           <div class="slider_description-wrapper">
             <span class="slider_slogan">Худеем <br>правильно!</span>
@@ -126,9 +144,15 @@
             <div class="slider_link-wrapper">
               <a class="slider_link" href="#">Подробнее</a>
               <div class="slider_button-wrapper">
-                <button class="slider_button-dot slider_button-active"></button>
-                <button class="slider_button-dot"></button>
-                <button class="slider_button-dot"></button>
+                <button class="slider_button-dot slider_button-active">
+                  <span class="visually-hidden">1 слайд.</span>
+                </button>
+                <button class="slider_button-dot">
+                  <span class="visually-hidden">2 слайд.</span>
+                </button>
+                <button class="slider_button-dot">
+                  <span class="visually-hidden">3 слайд.</span>
+                </button>
               </div>
             </div>
             <dl class="slider_table">
@@ -147,9 +171,13 @@
         <div class="slider_counter-wrapper"><p class="slider_counter">03</p></div>
         <div class="slider-wrapper">
           <div class="slider_image-wrapper">
-            <button class="slider_image-button slider_image-button-left" type="button"></button>
+            <button class="slider_image-button slider_image-button-left" type="button">
+              <span class="visually-hidden">Предыдущий слайд.</span>
+            </button>
             <img class="slider_image" src="./images/slider-image-monopod.png" alt="Селфи-палка." width="560" height="560">
-            <button class="slider_image-button slider_image-button-right" type="button"></button>
+            <button class="slider_image-button slider_image-button-right" type="button">
+              <span class="visually-hidden">Следующий слайд.</span>
+            </button>
           </div>
           <div class="slider_description-wrapper">
             <span class="slider_slogan">Делай селфи, <br>как Бен Стиллер! </span>
@@ -157,9 +185,15 @@
             <div class="slider_link-wrapper">
               <a class="slider_link" href="#">Подробнее</a>
               <div class="slider_button-wrapper">
-                <button class="slider_button-dot slider_button-active"></button>
-                <button class="slider_button-dot"></button>
-                <button class="slider_button-dot"></button>
+                <button class="slider_button-dot slider_button-active">
+                  <span class="visually-hidden">1 слайд.</span>
+                </button>
+                <button class="slider_button-dot">
+                  <span class="visually-hidden">2 слайд.</span>
+                </button>
+                <button class="slider_button-dot">
+                  <span class="visually-hidden">3 слайд.</span>
+                </button>
               </div>
             </div>
             <dl class="slider_table">
@@ -257,8 +291,8 @@
             <p class="subscription_description">Еженедельный дайджест с обзорами новинок, <br>длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           </div>
           <div class="subscription_form-wrapper">
-            <form class="subscription_form">
-              <label for="subscription-email"></label>
+            <form class="subscription_form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="visually-hidden" for="subscription-email">Поле для ввода e-mail.</label>
               <input class="subscription_form-field" placeholder="Ваш e-mail" type="email" name="subscription-email" id="subscription-email" required>
               <button class="subscription_button" type="submit">Подписаться</button>
             </form>
@@ -287,14 +321,14 @@
       <div class="footer_social-wrapper">
         <div class="footer_decoravite-line"></div>
           <ul class="footer_social-list">
-            <li class="footer_social-item"><a class="footer_social-link" href="#">
+            <li class="footer_social-item"><a class="footer_social-link" href="https://t.me/s/htmlacademy">
               <svg class="footer_social-logo" aria-hidden="true" focusable="false" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="20" cy="20" r="20"/>
                 <path class="footer_social-logo-svg" d="M25.4431 14.0736L13.6231 18.6316C12.8164 18.9556 12.8211 19.4056 13.4751 19.6062L16.5097 20.5529L23.5311 16.1229C23.8631 15.9209 24.1664 16.0296 23.9171 16.2509L18.2284 21.3849H18.2271L18.2284 21.3856L18.0191 24.5136C18.3257 24.5136 18.4611 24.3729 18.6331 24.2069L20.1071 22.7736L23.1731 25.0382C23.7384 25.3496 24.1444 25.1896 24.2851 24.5149L26.2977 15.0296C26.5037 14.2036 25.9824 13.8296 25.4431 14.0736Z"/>
               </svg>
               <span class="visually-hidden">Telegram.</span>
             </a></li>
-            <li class="footer_social-item"><a class="footer_social-link" href="#">
+            <li class="footer_social-item"><a class="footer_social-link" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
               <svg class="footer_social-logo" aria-hidden="true" focusable="false" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="20" cy="20" r="20"/>
                 <g clip-path="url(#clip0_11448_1480)"><path class="footer_social-logo-svg" d="M27.6671 16.6746C27.5765 16.3515 27.4 16.0589 27.1564 15.828C26.9059 15.59 26.5989 15.4197 26.2644 15.3333C25.0124 15.0033 19.9964 15.0033 19.9964 15.0033C17.9053 14.9795 15.8147 15.0842 13.7364 15.3166C13.4019 15.4094 13.0955 15.5835 12.8444 15.8233C12.5977 16.0606 12.4191 16.3533 12.3257 16.674C12.1015 17.8818 11.9926 19.1082 12.0004 20.3366C11.9924 21.564 12.1011 22.79 12.3257 23.9993C12.4171 24.3186 12.5951 24.61 12.8424 24.8453C13.0897 25.0806 13.3977 25.2506 13.7364 25.3406C15.0051 25.67 19.9964 25.67 19.9964 25.67C22.0902 25.6938 24.1835 25.5892 26.2644 25.3566C26.5989 25.2702 26.9059 25.1 27.1564 24.862C27.3999 24.6311 27.5762 24.3385 27.6664 24.0153C27.8965 22.8079 28.0083 21.581 28.0004 20.352C28.0177 19.1177 27.906 17.885 27.6671 16.674V16.6746ZM18.4017 22.6193V18.0546L22.5751 20.3373L18.4017 22.6193Z"/></g>
@@ -310,7 +344,8 @@
               <span class="visually-hidden">Twitter.</span>
             </a></li>
           </ul>
-          <a href="#">
+          <a href="https://htmlacademy.ru/">
+            <span class="visually-hidden">Логотип html academy.</span>
             <svg class="footer_html-academy-logo" aria-hidden="true" focusable="false" width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 12.9V15.5H2.5V12.9H0Z"/>
               <path d="M11.6 4.5C10 4.5 8.8 5.2 8 6.2H7.9V0H5.9V15.5H7.9V10.2C7.9 8.1 9.2 6.6 11.2 6.6C13 6.6 14.1 8 14.1 9.8V15.5H16.1V9.4C16.2 6.4 14.3 4.5 11.6 4.5Z"/>
@@ -331,7 +366,8 @@
     </footer>
 
     <!-- Модальное окно -->
-    <div class="popup popup_opened">
+    <!-- Что бы открыть модальное окно, дабвьте класс popup_opened -->
+    <div class="popup">
       <div class="popup_container">
         <div class="popup_content-wrapper">
           <h3 class="popup_title">Доставка под заказ</h3>
@@ -342,7 +378,7 @@
             <span class="visually-hidden">Закрыть.</span>
           </button>
         </div>
-        <form class="popup_form">
+        <form class="popup_form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="popup_content-wrapper">
             <div class="popup_field-container">
               <label class="popup_label" for="input-name">Ваше имя:</label>

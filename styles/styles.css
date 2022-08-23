@@ -1,6 +1,6 @@
 /* Подключение шрифтов */
 @font-face {
-  font-family: Raleway;
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
   src: url(../fonts/raleway/raleway-800.woff2);
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: Rubik;
+  font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
   src: url(../fonts/rubik/rubik-400.woff2);
@@ -16,7 +16,7 @@
 }
 
 @font-face {
-  font-family: Rubik;
+  font-family: 'Rubik';
   font-style: normal;
   font-weight: 700;
   src: url(../fonts/rubik/rubik-700.woff2);
@@ -501,7 +501,7 @@
   height: 50px;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -560,7 +560,7 @@
 
 .slider_counter {
   color: #FFFFFF;
-  font-family: 'Rubik';
+  font-family: 'Rubik',sans-serif;
   font-weight: 700;
   font-size: 180px;
   line-height: 105px;
@@ -627,7 +627,7 @@
 }
 
 .slider_slogan {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -636,7 +636,7 @@
 .slider_description {
   margin: 0;
   margin-top: 29px;
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -651,6 +651,7 @@
   box-sizing: border-box;
   background-color: #FFFFFF;
   cursor: pointer;
+  position: relative;
 }
 
 .slider_button-active {
@@ -667,7 +668,7 @@
 .slider_link {
   text-decoration: none;
   color: #000000;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -826,7 +827,7 @@
 .catalog_title {
   margin-top: 32px;
   margin-bottom: 0;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
@@ -836,19 +837,14 @@
 /* Стили для блока с преимуществами */
 .features {
   width: 100%;
-  height: 289px;
-  margin-top: 172px;
-  background-color: #F0F0F0;
-  position: relative;
+  min-height: 393px;
+  background: linear-gradient(to bottom, #FFFFFF 0, #FFFFFF 102px, #F0F0F0 102px, #F0F0F0 393px);
 }
 
 .features-wrapper {
   width: 1160px;
+  margin: 0 auto;
   display: flex;
-  position: absolute;
-  top: -102px;
-  left: 50%;
-  margin-left: calc(-1160px/2);
 }
 
 .features_buttons-list {
@@ -872,7 +868,7 @@
 }
 
 .features_button {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -976,7 +972,7 @@
 
 .features_destription-header {
   margin-bottom: 34px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -1003,7 +999,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 20px;
   line-height: 23px;
@@ -1064,7 +1060,7 @@
 
 .information_title {
   margin-bottom: 48px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -1123,7 +1119,7 @@
   display: inline-block;
   color: #000000;
   text-decoration: none;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -1170,7 +1166,7 @@
 
 /* Стили для блока подписки */
 .subscription {
-  width: 100vw;
+  width: 100%;
   background-color: #F0F0F0;
 }
 
@@ -1192,7 +1188,7 @@
   margin: 0;
   margin-left: 8px;
   max-width: 350px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -1237,7 +1233,7 @@
 .subscription_button {
   width: 253px;
   height: 57px;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -1291,7 +1287,7 @@
 
 /* Стили для футера */
 .footer {
-  width: 100vw;
+  width: 100%;
   background-color: #444444;
   color: #FFFFFF;
 }
@@ -1322,7 +1318,7 @@
   margin: 0;
   display: flex;
   list-style-type: none;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -1679,7 +1675,7 @@
 }
 
 .popup_button {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
