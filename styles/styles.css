@@ -781,10 +781,11 @@
 /* Стили для каталога */
 .catalog {
   width: 1160px;
-  margin: 68px auto;
+  margin: 51px auto 87px auto;
 }
 
 .catalog_list {
+  max-height: 253px;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -802,9 +803,29 @@
   position: relative;
 }
 
-/* .catalog_link:hover .catalog_image {
+.catalog_link:hover .catalog_title-virtual-reality::before {
   background-color: #FFC700;
-} */
+}
+
+.catalog_link:hover .catalog_title-monopods::before {
+  background-color: #FFC700;
+}
+
+.catalog_link:hover .catalog_title-action-cameras::before {
+  background-color: #FFC700;
+}
+
+.catalog_link:hover .catalog_title-fitness-bracelets::before {
+  background-color: #FFC700;
+}
+
+.catalog_link:hover .catalog_title-smart-watches::before {
+  background-color: #FFC700;
+}
+
+.catalog_link:hover .catalog_title-quadracopters::before {
+  background-color: #FFC700;
+}
 
 .catalog_link:active {
   opacity: 0.3;
@@ -824,13 +845,14 @@
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
-  top: -193px;
+  top: 0;
 }
 
 .catalog_title-monopods::before {
   content: '';
   width: 160px;
   height: 160px;
+  background-color: #FFE17F;
   background-image: url(../images/catalog-image-monopods.svg);
   background-position: bottom;
   background-repeat: no-repeat;
@@ -843,6 +865,7 @@
   content: '';
   width: 160px;
   height: 160px;
+  background-color: #FFE17F;
   background-image: url(../images/catalog-image-action-cameras.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -855,6 +878,7 @@
   content: '';
   width: 160px;
   height: 160px;
+  background-color: #FFE17F;
   background-image: url(../images/catalog-image-fitness-bracelets.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -867,6 +891,7 @@
   content: '';
   width: 160px;
   height: 160px;
+  background-color: #FFE17F;
   background-image: url(../images/catalog-image-smart-watches.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -879,6 +904,7 @@
   content: '';
   width: 160px;
   height: 160px;
+  background-color: #FFE17F;
   background-image: url(../images/catalog-image-quadracopters.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -888,7 +914,7 @@
 }
 
 .catalog_title {
-  margin-top: 193px;
+  padding-top: 193px;
   margin-bottom: 0;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -1050,7 +1076,7 @@
 /* Стили для блока с информацией */
 .information {
   width: 1160px;
-  margin: 70px auto;
+  margin: 68px auto 70px auto;
 }
 
 .information_link {
@@ -1200,11 +1226,11 @@
 }
 
 .information_button-about-us {
-  padding: 10px 23px 10px 23px;
+  padding: 10px 20px 10px 23px;
 }
 
 .information_button-write-us {
-  padding: 10px 33px 10px 33px;
+  padding: 10px 31px 10px 33px;
 }
 
 .information_contacts-title {
