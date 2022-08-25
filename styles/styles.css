@@ -802,9 +802,9 @@
   position: relative;
 }
 
-.catalog_link:hover .catalog_image {
+/* .catalog_link:hover .catalog_image {
   background-color: #FFC700;
-}
+} */
 
 .catalog_link:active {
   opacity: 0.3;
@@ -814,19 +814,20 @@
   outline: #AF4FFF solid 2px;
 }
 
-.catalog_link-virtual-reality::after {
+.catalog_title-virtual-reality::before {
   content: '';
   width: 160px;
   height: 160px;
+  background-color: #FFE17F;
   background-image: url(../images/catalog-image-virtual-reality.svg);
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -193px;
 }
 
-.catalog_link-monopods::after {
+.catalog_title-monopods::before {
   content: '';
   width: 160px;
   height: 160px;
@@ -838,7 +839,7 @@
   top: 0;
 }
 
-.catalog_link-action-cameras::after {
+.catalog_title-action-cameras::before {
   content: '';
   width: 160px;
   height: 160px;
@@ -850,7 +851,7 @@
   top: 0;
 }
 
-.catalog_link-fitness-bracelets::after {
+.catalog_title-fitness-bracelets::before {
   content: '';
   width: 160px;
   height: 160px;
@@ -862,7 +863,7 @@
   top: 0;
 }
 
-.catalog_link-smart-watches::after {
+.catalog_title-smart-watches::before {
   content: '';
   width: 160px;
   height: 160px;
@@ -874,7 +875,7 @@
   top: 0;
 }
 
-.catalog_link-quadracopters::after {
+.catalog_title-quadracopters::before {
   content: '';
   width: 160px;
   height: 160px;
@@ -887,7 +888,7 @@
 }
 
 .catalog_title {
-  margin-top: 32px;
+  margin-top: 193px;
   margin-bottom: 0;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
