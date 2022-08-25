@@ -55,6 +55,7 @@
 
 .page {
   font-family: 'Rubik', sans-serif;
+  min-width: 1440px;
   min-height: 100%;
   margin: 0;
   display: flex;
@@ -165,11 +166,11 @@
 }
 
 .header__user-navigation-link:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .header__user-navigation-link:active {
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .header__user-navigation-link:focus {
@@ -213,10 +214,6 @@
   position: relative;
 }
 
-.header__user-navigation-link-basket-ikon:hover .header__user-navigation-link-log-in-counter {
-  opacity: 0.7;
-}
-
 .header__user-navigation-link-log-in-counter {
   font-size: 14px;
   line-height: 17px;
@@ -255,14 +252,14 @@
 }
 
 .header__magazin-navigation-link:not(.header__magazin-navigation-link-catalog):hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .header__magazin-navigation-link:not(.header__magazin-navigation-link-catalog):active {
   opacity: 0.3;
 }
 
-.header__magazin-navigation-link:focus {
+.header__magazin-navigation-link:not(.header__magazin-navigation-link-catalog):focus {
   outline: #AF4FFF solid 2px;
 }
 
@@ -275,6 +272,17 @@
   display: inline-block;
   min-width: 293px;
   position: relative;
+  z-index: 2;
+}
+
+.header__magazin-navigation-link-catalog:focus::after {
+  content: '';
+  width: 297px;
+  height: 54px;
+  border: 2px solid #AF4FFF;
+  position: absolute;
+  left: -4px;
+  top: -19px;
 }
 
 .header__magazin-navigation-button {
@@ -361,7 +369,7 @@
 }
 
 .header__magazin-submenu-link:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .header__magazin-submenu-link:active {
@@ -415,7 +423,7 @@
 .header__tooltip::before {
   content: '';
   width: 100%;
-  height: 20px;
+  height: 10px;
   background-color: none;
   position: absolute;
   bottom: 100%;
@@ -653,19 +661,52 @@
   color: #444444;
 }
 
+.slider_button-wrapper {
+  display: flex;
+  gap: 15px;
+}
+
 .slider_button-dot {
   padding: 0;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
   background-color: #FFFFFF;
+  border: none;
   cursor: pointer;
   position: relative;
 }
 
-.slider_button-active {
+.slider_button-dot::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider_button-active::before {
   background-color: #000000;
+}
+
+.slider_button-dot:last-of-type {
+  margin-right: 0;
+}
+
+.slider_button-dot:hover {
+  opacity: 0.6;
+}
+
+.slider_button-dot:active {
+  opacity: 0.3;
+}
+
+.slider_button-dot:focus {
+  outline: #AF4FFF solid 2px;
 }
 
 .slider_link-wrapper {
@@ -706,26 +747,6 @@
 
 .slider_link:disabled {
   opacity: 0.3;
-}
-
-.slider_button-dot {
-  margin-right: 17px;
-}
-
-.slider_button-dot:last-of-type {
-  margin-right: 0;
-}
-
-.slider_button-dot:hover {
-  opacity: 0.6;
-}
-
-.slider_button-dot:active {
-  opacity: 0.3;
-}
-
-.slider_button-dot:focus {
-  outline: #AF4FFF solid 2px;
 }
 
 .slider_table {
@@ -778,6 +799,7 @@
   height: 253px;
   text-decoration: none;
   color: #000000;
+  position: relative;
 }
 
 .catalog_link:hover .catalog_image {
@@ -792,46 +814,76 @@
   outline: #AF4FFF solid 2px;
 }
 
-.catalog_image {
+.catalog_link-virtual-reality::after {
+  content: '';
   width: 160px;
   height: 160px;
-  background-color: #FFE17F;
-}
-
-.catalog_image-virtual-reality {
   background-image: url(../images/catalog-image-virtual-reality.svg);
   background-position: center;
   background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-.catalog_image-monopods {
+.catalog_link-monopods::after {
+  content: '';
+  width: 160px;
+  height: 160px;
   background-image: url(../images/catalog-image-monopods.svg);
   background-position: bottom;
   background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-.catalog_image-action-cameras {
+.catalog_link-action-cameras::after {
+  content: '';
+  width: 160px;
+  height: 160px;
   background-image: url(../images/catalog-image-action-cameras.svg);
   background-position: center;
   background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-.catalog_image-fitness-bracelets {
+.catalog_link-fitness-bracelets::after {
+  content: '';
+  width: 160px;
+  height: 160px;
   background-image: url(../images/catalog-image-fitness-bracelets.svg);
   background-position: center;
   background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-.catalog_image-smart-watches {
+.catalog_link-smart-watches::after {
+  content: '';
+  width: 160px;
+  height: 160px;
   background-image: url(../images/catalog-image-smart-watches.svg);
   background-position: center;
   background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-.catalog_image-quadracopters {
+.catalog_link-quadracopters::after {
+  content: '';
+  width: 160px;
+  height: 160px;
   background-image: url(../images/catalog-image-quadracopters.svg);
   background-position: center;
   background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .catalog_title {
@@ -1003,7 +1055,8 @@
 .information_link {
   width: 1160px;
   height: 100px;
-  margin-bottom: 76px;
+  border: 2px solid #FFFFFF;
+  margin-bottom: 72px;
   text-decoration: none;
   color: black;
   background-color: #F0F0F0;
@@ -1041,6 +1094,10 @@
 
 .information_link:hover::before {
   background-color: #FFC700;
+}
+
+.information_link:hover::after {
+  background-image: url(../images/information-button-symbol-hover.svg);
 }
 
 .information_link::after {
@@ -1379,7 +1436,7 @@
 }
 
 .footer_nav-link:focus {
-  outline: 3px solid #7B61FF;
+  outline: 2px solid #7B61FF;
 }
 
 .footer_telefone-link {
@@ -1396,7 +1453,7 @@
 }
 
 .footer_telefone-link:focus {
-  outline: 3px solid #7B61FF;
+  outline: 2px solid #7B61FF;
 }
 
 .footer_social-wrapper {
@@ -1444,7 +1501,7 @@
 }
 
 .footer_social-link:focus {
-  outline: 3px solid #7B61FF;
+  outline: 2px solid #7B61FF;
 }
 
 .footer_html-academy-logo path {
@@ -1460,9 +1517,10 @@
   opacity: 0.3;
 }
 
-.footer_html-academy-logo:focus path {
-  outline: 3px solid #7B61FF;
+.footer_html-academy-logo-link:focus {
+  outline: 1px solid #7B61FF;
 }
+
 
 .footer_logo-link {
   display: inline-block;
