@@ -1080,8 +1080,10 @@
 }
 
 .information_link {
-  width: 1160px;
-  height: 100px;
+  width: 910px;
+  min-height: 100px;
+  padding: 0 125px 0 125px;
+  text-align: center;
   border: 2px solid #FFFFFF;
   margin-bottom: 72px;
   text-decoration: none;
@@ -1110,7 +1112,7 @@
 .information_link::before {
   content: "";
   width: 125px;
-  height: 100px;
+  height: 100%;
   background-color: #FFE17F;
   background-image: url(../images/information-button-image.svg);
   background-position: center;
@@ -1427,6 +1429,7 @@
   padding: 5px 70px 0 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
