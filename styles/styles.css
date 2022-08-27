@@ -1281,7 +1281,7 @@
 .subscription-wrapper {
   width: 1160px;
   padding-top: 64px;
-  padding-bottom: 56px;
+  padding-bottom: 55px;
   margin: 0 auto;
 }
 
@@ -1404,18 +1404,39 @@
   color: #FFFFFF;
 }
 
-.footer_wrapper {
+.footer_container {
   width: 1160px;
   margin: 0 auto;
   padding-top: 62px;
-  padding-bottom: 77px;
+  padding-bottom: 57px;
 }
 
-.footer_nav-wrapper {
-  margin-top: 30px;
+.footer_wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
+}
+
+.footer_logo-link {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.footer_logo-link:hover, .header_logo-link:hover {
+  opacity: 0.6;
+}
+
+.footer_logo-link:active, .header_logo-link:active {
+  opacity: 0.3;
+}
+
+.footer_logo-link:focus, .header_logo-link:focus {
+  outline: 2px solid #7B61FF;
+}
+
+.footer_infomation-wraper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .footer_address {
@@ -1425,11 +1446,27 @@
   line-height: 20px;
 }
 
+.footer_decoravite-line {
+  width: 80px;
+  height: 7px;
+  margin-top: 65px;
+  background-color: #FFC500;
+}
+
+.footer_nav-wrapper {
+  max-width: 455px;
+  margin-left: 117px;
+  margin-right: 180px;
+  margin-top: 5px;
+}
+
 .footer_nav-list {
-  padding: 5px 70px 0 0;
-  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 62px;
   display: flex;
   flex-wrap: wrap;
+  gap: 31px;
   list-style-type: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -1437,14 +1474,6 @@
   line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-}
-
-.footer_nav-item {
-  margin-right: 30px;
-}
-
-.footer_nav-item:last-of-type {
-  margin-right: 0;
 }
 
 .footer_nav-link {
@@ -1469,45 +1498,20 @@
   outline: 2px solid #7B61FF;
 }
 
-.footer_telefone-link {
-  padding-top: 5px;
-  color: #FFFFFF;
-}
-
-.footer_telefone-link:hover {
-  color: #FFC700;
-}
-
-.footer_telefone-link:active {
-  opacity: 0.3;
-}
-
-.footer_telefone-link:focus {
-  outline: 2px solid #7B61FF;
-}
-
-.footer_social-wrapper {
-  margin-top: 45px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .footer_social-list {
-  padding: 0 0 0 50px;
+  padding: 0;
   margin: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
 
-.footer_decoravite-line {
-  width: 80px;
-  height: 7px;
-  background-color: #FFC500;
-}
-
-.footer_social-item {
-  margin-right: 15px;
+.footer_social-link {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
 }
 
 .footer_social-logo {
@@ -1534,6 +1538,36 @@
   outline: 2px solid #7B61FF;
 }
 
+.footer_logo-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.footer_telefone-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #FFFFFF;
+}
+
+.footer_telefone-link:hover {
+  color: #FFC700;
+}
+
+.footer_telefone-link:active {
+  opacity: 0.3;
+}
+
+.footer_telefone-link:focus {
+  outline: 2px solid #7B61FF;
+}
+
+.footer_html-academy-logo-link {
+  display: inline-block;
+  align-self: flex-end;
+  margin-top: 63px;
+}
+
 .footer_html-academy-logo path {
   fill: #FFC700;
 }
@@ -1549,23 +1583,6 @@
 
 .footer_html-academy-logo-link:focus {
   outline: 1px solid #7B61FF;
-}
-
-
-.footer_logo-link {
-  display: inline-block;
-}
-
-.footer_logo-link:hover, .header_logo-link:hover {
-  opacity: 0.6;
-}
-
-.footer_logo-link:active, .header_logo-link:active {
-  opacity: 0.3;
-}
-
-.footer_logo-link:focus, .header_logo-link:focus {
-  outline: 2px solid #7B61FF;
 }
 
 /* Стили для модального окна */
