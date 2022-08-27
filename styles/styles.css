@@ -85,7 +85,7 @@
 .header__navigation-wrapper {
   padding-top: 45px;
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .header__form {
@@ -102,7 +102,7 @@
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
-  padding: 8px 120px 8px 46px;
+  padding: 8px 123px 8px 46px;
   background-image: url(../images/header-input-icon.svg);
   background-position: left 16px center;
   background-repeat: no-repeat;
@@ -1357,6 +1357,7 @@
   box-sizing: border-box;
   border: 3px solid #C4C4C4;
   cursor: pointer;
+  background-color: inherit;
 }
 
 .subscription_button:hover {
@@ -1728,6 +1729,13 @@
 
 .popup_input-number {
    width: 60px;
+}
+
+.popup_input-number::-webkit-outer-spin-button,
+.popup_input-number::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .popup_input-button {
