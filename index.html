@@ -20,16 +20,22 @@
           <div class="header__navigation-wrapper">
             <form class="header__form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="input-search">Поиск по магазину</label>
-              <input class="header__input" type="text" placeholder="Поиск по сайту" name="input-search"
-                id="input-search" required>
-              <button class="header__button" type="submit">Найти</button>
+              <div class="header__input-wrapper">
+                <input class="header__input" type="text" placeholder="Поиск по сайту" name="input-search"
+                  id="input-search" required>
+              </div>
+              <div class="header__button-wrapper">
+                <button class="header__button" type="submit">Найти</button>
+              </div>
             </form>
             <!-- Пользовательское меню -->
-            <ul class="header__user-navigation">
-              <li class="header__user-navigation-item-log-in"><a
+            <ul class="header__log-in-list">
+              <li class="header__log-in-item"><a
                   class="header__user-navigation-link header__user-navigation-link-log-in" href="#">
                   <div class="header__user-navigation-link-log-in-ikon"></div>Войти
                 </a></li>
+            </ul>
+            <ul class="header__user-navigation-list">
               <li class="header__user-navigation-item-compare"><a
                   class="header__user-navigation-link header__user-navigation-link-compare" href="#">
                   <div class="header__user-navigation-link-compare-ikon"></div>Сравнить
@@ -38,8 +44,8 @@
                   class="header__user-navigation-link header__user-navigation-link-basket" href="#">
                   <div class="header__user-navigation-link-basket-ikon"><span
                       class="header__user-navigation-link-log-in-counter">2</span></div>Корзина
-                </a>
-
+                </a></li>
+            </ul>
                 <!-- Tooltip -->
                 <div class="header__tooltip">
                   <ul class="header__tooltip-basket-list">
@@ -434,8 +440,8 @@
           <div class="footer_logo-wrapper">
             <a class="footer_telefone-link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
             <a class="footer_html-academy-logo-link" href="https://htmlacademy.ru/">
-              <svg class="footer_html-academy-logo" role="img" aria-label="Логотип html academy." aria-hidden="true"
-                focusable="false" width="115" height="33" viewBox="0 0 115 33" fill="none"
+              <svg class="footer_html-academy-logo" role="img" aria-label="Логотип html academy."
+                width="115" height="33" viewBox="0 0 115 33" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 12.9V15.5H2.5V12.9H0Z" />
                 <path
